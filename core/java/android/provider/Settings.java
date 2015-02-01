@@ -3652,6 +3652,7 @@ public final class Settings {
          * Action to perform when the assistant (search) key is long-pressed.
          * (default: ACTION_VOICE_SEARCH)
          * (See ButtonsConstants.java for valid values)
+         *
          * @hide
          */
         public static final String KEY_ASSIST_LONG_PRESS_ACTION = "key_assist_long_press_action";
@@ -3875,6 +3876,12 @@ public final class Settings {
          * @hide
          */
         public static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
+
+        /**
+         * Whether to show four tiles per row.
+         * @hide
+         */
+        public static final String QS_USE_FOUR_COLUMNS = "qs_use_four_columns";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
