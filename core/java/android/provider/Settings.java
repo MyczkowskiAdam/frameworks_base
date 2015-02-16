@@ -3897,6 +3897,7 @@ public final class Settings {
          */
         public static final String QS_USE_MAIN_TILES = "sysui_qs_main_tiles";
 
+
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
@@ -8325,6 +8326,12 @@ public final class Settings {
          * @hide
          */
         public static final String POLICY_CONTROL = "policy_control";
+
+        /**
+         * @hide
+         */
+        public static final String ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK =
+                "zen_disable_ducking_during_media_playback";
 
         /**
          * Defines global zen mode.  ZEN_MODE_OFF, ZEN_MODE_IMPORTANT_INTERRUPTIONS,
