@@ -3722,7 +3722,7 @@ public final class Settings {
         /** @hide */
         public static final Validator APP_SWITCH_SWAP_BUTTONS_VALIDATOR =
                 sBooleanValidator;
-  
+
         /**
          * Action to perform when the app switch key is long-pressed. (default: ACTION_NULL)
          * (See ButtonsConstants.java for valid values)
@@ -3730,6 +3730,13 @@ public final class Settings {
          */
         public static final String KEY_APP_SWITCH_LONG_PRESS_ACTION =
                 "key_app_switch_long_press_action";
+
+
+        /**
+         * Enable/Disable screenshot sound
+         * @hide
+         */
+        public static final String SCREENSHOT_SOUND = "screenshot_sound";
 
         /**
          * Action to perform when the app switch key is double tapped. (default: ACTION_NULL)
