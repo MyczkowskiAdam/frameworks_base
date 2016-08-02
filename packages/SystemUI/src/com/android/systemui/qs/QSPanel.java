@@ -27,7 +27,9 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Handler;
+import android.os.UserHandle;
 import android.os.Message;
+import android.provider.Settings;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -719,9 +721,6 @@ public class QSPanel extends ViewGroup {
 
         void observe() {
             ContentResolver resolver = mContext.getContentResolver();
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QUICK_SETTINGS_TILES_VIBRATE),
-                    false, this, UserHandle.USER_ALL);
             update();
         }
 
@@ -743,9 +742,7 @@ public class QSPanel extends ViewGroup {
 
         public void update() {
             ContentResolver resolver = mContext.getContentResolver();
-            mVibrationEnabled = Settings.System.getIntForUser(
-            mContext.getContentResolver(), Settings.System.QUICK_SETTINGS_TILES_VIBRATE,
-                0, UserHandle.USER_CURRENT) == 1;
+            update();
         }
     }
 }
